@@ -1,0 +1,7 @@
+{
+  "name": "With Love, Irene",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
