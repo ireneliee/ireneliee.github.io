@@ -1,3 +1,7 @@
 ion-content {
     --ion-background-color: #34495e;
 }
+
+.animation-container-homepage {
+    display: flex;
+}

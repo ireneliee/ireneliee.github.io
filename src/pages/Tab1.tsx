@@ -2,13 +2,26 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import MovingTitle from "../components/MovingTitle";
+import Coffee from "../components/Coffee";
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
 
       <IonContent fullscreen class = "tab-one-fullscreen">
-          <MovingTitle></MovingTitle>
+          <div className = "animation-container-homepage">
+              <div className = "moving-title">
+                  <MovingTitle></MovingTitle>
+              </div>
+              <div className = "coffee-machine">
+                  <Coffee></Coffee>
+              </div>
+          </div>
+          <div className = "irene-bio">
+
+          </div>
+
+
       </IonContent>
     </IonPage>
   );
