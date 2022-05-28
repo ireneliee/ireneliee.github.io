@@ -4,4 +4,13 @@ ion-content {
 
 .animation-container-homepage {
     display: flex;
+    margin-top: 18%;
+    margin-left: 50%;
+}
+
+.button-menu {
+    margin-left: 46%;
+}
+.button-choice {
+    padding-left: 1em;
 }

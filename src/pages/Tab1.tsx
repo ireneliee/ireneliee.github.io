@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import MovingTitle from "../components/MovingTitle";
@@ -17,8 +17,10 @@ const Tab1: React.FC = () => {
                   <Coffee></Coffee>
               </div>
           </div>
-          <div className = "irene-bio">
-
+          <div className = "button-menu">
+              <IonButton color="light" className = "button-choice">Bio</IonButton>
+              <IonButton color="medium" className = "button-choice">Notable Project</IonButton>
+              <IonButton color="dark" className = "button-choice">Social Media</IonButton>
           </div>
 
 

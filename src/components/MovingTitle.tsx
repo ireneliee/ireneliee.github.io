@@ -10,8 +10,8 @@ const MovingTitle: React.FC = () => {
                     </p>
 
                     <ul className="content__container__list">
-                        <li className="content__container__list__item">Irene</li>
-                        <li className="content__container__list__item">aspiring</li>
+                        <li className="content__container__list__item">Irene Lie</li>
+                        <li className="content__container__list__item"> an aspiring</li>
                         <li className="content__container__list__item">full-stack</li>
                         <li className="content__container__list__item">developer</li>
                     </ul>
