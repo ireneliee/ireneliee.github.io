@@ -1,34 +1,55 @@
-import {IonButton, IonContent, IonHeader, IonPage, IonRouterOutlet, IonTitle, IonToolbar} from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import {
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonRouterOutlet,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import ExploreContainer from "../components/ExploreContainer";
+import "./Tab1.css";
 import MovingTitle from "../components/MovingTitle";
 import Coffee from "../components/Coffee";
-import {Route} from "react-router-dom";
+import { BrowserRouter, Redirect, Route } from "react-router-dom";
 import Bio from "./Bio";
-
+import { IonReactRouter } from "@ionic/react-router";
+import monoPic from "../images/irene-almost-mono.png";
 const Tab1: React.FC = () => {
   return (
     <IonPage>
+      <IonReactRouter>
         <IonRouterOutlet>
-            <Route path="/tab1/bio" component={Bio} />
+          <Route exact path="/Bio">
+            <Bio />
+          </Route>
         </IonRouterOutlet>
+      </IonReactRouter>
 
-      <IonContent fullscreen class = "tab-one-fullscreen">
-          <div className = "animation-container-homepage">
-              <div className = "moving-title">
-                  <MovingTitle></MovingTitle>
-              </div>
-              <div className = "coffee-machine">
-                  <Coffee></Coffee>
-              </div>
+      <IonContent fullscreen class="tab-one-fullscreen">
+        <div className="animation-container-homepage">
+          <div className="narative">
+            <div className = "profile-pic">
+              <img id="mono-pic" src={monoPic} alt="irene" />
+            </div>
+            <div className="moving-title">
+              <MovingTitle></MovingTitle>
+            </div>
+            <div>
+              <p>
+                As an Information System undergraduate at NUS, I am very much
+                curious about everything computer science related. However, if I
+                have to choose? Well, I am probably most interested in the
+                development of an enterprise system.
+              </p>
+            </div>
           </div>
-          <div className = "button-menu">
-              <IonButton color="light" className = "button-choice" href = "Bio">Bio</IonButton>
-              <IonButton color="medium" className = "button-choice">Notable Project</IonButton>
-              <IonButton color="dark" className = "button-choice">Social Media</IonButton>
+
+          <div className="coffee-machine">
+            <Coffee></Coffee>
           </div>
-
-
+        </div>
+        <div></div>
       </IonContent>
     </IonPage>
   );

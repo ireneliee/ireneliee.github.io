@@ -61,11 +61,11 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={chatbubbles} />
-            <IonLabel>2am Thoughts</IonLabel>
+            <IonLabel>Blog posts</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={gameController} />
-            <IonLabel>Playground</IonLabel>
+            <IonLabel>Works & Projects</IonLabel>
         </IonTabButton>
         </IonTabBar>
       </IonTabs>
