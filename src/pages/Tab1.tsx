@@ -15,6 +15,7 @@ import { BrowserRouter, Redirect, Route } from "react-router-dom";
 import Bio from "./Bio";
 import { IonReactRouter } from "@ionic/react-router";
 import monoPic from "../images/irene-almost-mono.png";
+
 const Tab1: React.FC = () => {
   return (
     <IonPage>
@@ -39,8 +40,8 @@ const Tab1: React.FC = () => {
               <p>
                 As an Information System undergraduate at NUS, I am very much
                 curious about everything computer science related. However, if I
-                have to choose? Well, I am probably most interested in the
-                development of an enterprise system.
+                have to choose, I am probably most interested in the
+                development of enterprise system.
               </p>
             </div>
           </div>
