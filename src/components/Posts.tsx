@@ -13,7 +13,7 @@ const Posts = () => {
       environments also use it. JavaScript can be 
       used for Client-side developments as well as 
       Server-side developments`,
-      author: "Nishant Singh ",
+      date: new Date(2022, 8, 6),
       imgUrl:
         "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
     },
@@ -28,7 +28,7 @@ const Posts = () => {
       stack for the longest period of time. So, it 
       can be simply seen to follow LIFO(Last In 
       First Out)/FILO(First In Last Out) order.`,
-      author: "Suresh Kr",
+      date: new Date(2022, 5, 6),
       imgUrl:
         "https://media.geeksforgeeks.org/img-practice/banner/coa-gate-2022-thumbnail.png",
     },
@@ -41,7 +41,7 @@ const Posts = () => {
       that step-by-step define how a work is to be 
       executed upon in order to get the expected 
       results. `,
-      author: "Monu Kr",
+      date: new Date(2022, 5, 5),
       imgUrl:
         "https://media.geeksforgeeks.org/img-practice/banner/google-test-series-thumbnail.png",
     },
@@ -56,7 +56,7 @@ const Posts = () => {
       devices; these are known as Network devices
       and include things such as routers, switches,
       hubs, and bridges. `, 
-      author: "Sonu Kr",
+      date: new Date(2022, 5, 7),
       imgUrl:
         "https://media.geeksforgeeks.org/img-practice/banner/cp-maths-java-thumbnail.png",
     },
