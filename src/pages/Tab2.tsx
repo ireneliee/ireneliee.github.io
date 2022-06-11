@@ -96,8 +96,8 @@ const Tab2: React.FC = () => {
             
           </IonList>
 
-          <ExperienceContent></ExperienceContent>
-          <IonPage id="main" />
+          
+          <IonContent id = "main"><ExperienceContent></ExperienceContent></IonContent>
         </IonSplitPane>
       </IonContent>
     </IonPage>
