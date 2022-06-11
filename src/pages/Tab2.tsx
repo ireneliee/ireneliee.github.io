@@ -11,9 +11,20 @@ import {
   IonList,
   IonSearchbar,
   IonLabel,
+  IonButton,
+  IonCard,
+  IonCardContent,
+  IonIcon,
+  IonItem,
+  IonChip,
+  IonFab,
+  IonFabButton,
 } from "@ionic/react";
 import { PostSummaryList } from "../components/PostSummaryList";
 import { PostView } from "../components/PostView";
+import { arrowForwardCircle, pin } from "ionicons/icons";
+import { title } from "process";
+import ExperienceContent from "../components/ExperienceContent";
 
 // remember, you put the database here
 const listOfPosts = [
@@ -36,25 +47,57 @@ const listOfPosts = [
     photoLink: "https://miro.medium.com/max/700/0*d4MCIsYq-FZk9PSs.png",
   },
 ];
-
+let experience: string = "Internship and work experience";
+let project: string =
+  "All personal and team projects I have done outside of my internship experience";
+let activities: string =
+  "My miscellaneous activities that are non-work related";
 const Tab2: React.FC = () => {
   return (
     <IonPage>
-      
       <IonContent>
         <IonSplitPane contentId="main">
           <IonList>
-            <IonSearchbar></IonSearchbar>
-            <PostSummaryList posts={listOfPosts}></PostSummaryList>
-          </IonList>
-          
-          <PostView></PostView>
-          <IonPage id="main" />
-          
-          
+            <IonCard>
+              <IonItem>
+                <IonIcon icon={pin} slot="start" />
+                <IonLabel>Experience</IonLabel>
+                <IonButton fill="outline" slot="end">
+                  Breakdowns
+                </IonButton>
+              </IonItem>
+
+              <IonCardContent>{experience}</IonCardContent>
+            </IonCard>
+
+            <IonCard>
+              <IonItem>
+                <IonIcon icon={pin} slot="start" />
+                <IonLabel>Projects</IonLabel>
+                <IonButton fill="outline" slot="end">
+                  Breakdowns
+                </IonButton>
+              </IonItem>
+
+              <IonCardContent>{project}</IonCardContent>
+            </IonCard>
+
+            <IonCard>
+              <IonItem>
+                <IonIcon icon={pin} slot="start" />
+                <IonLabel>Activities</IonLabel>
+                <IonButton fill="outline" slot="end">
+                  Breakdowns
+                </IonButton>
+              </IonItem>
+
+              <IonCardContent>{activities}</IonCardContent>
+            </IonCard>
             
-          
-          
+          </IonList>
+
+          <ExperienceContent></ExperienceContent>
+          <IonPage id="main" />
         </IonSplitPane>
       </IonContent>
     </IonPage>

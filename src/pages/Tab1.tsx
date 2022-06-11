@@ -14,7 +14,11 @@ import Coffee from "../components/Coffee";
 import { BrowserRouter, Redirect, Route } from "react-router-dom";
 import Bio from "./Bio";
 import { IonReactRouter } from "@ionic/react-router";
-import monoPic from "../images/irene-almost-mono.png";
+import twitter from "../images/twitter.png";
+import instagram from "../images/instagram.png";
+import linkedin from "../images/linkedin.png";
+import medium from "../images/medium.png";
+import github from "../images/github.png";
 
 const Tab1: React.FC = () => {
   return (
@@ -30,9 +34,7 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen class="tab-one-fullscreen">
         <div className="animation-container-homepage">
           <div className="narative">
-            <div className = "profile-pic">
-              <img id="mono-pic" src={monoPic} alt="irene" />
-            </div>
+           
             <div className="moving-title">
               <MovingTitle></MovingTitle>
             </div>
@@ -43,6 +45,13 @@ const Tab1: React.FC = () => {
                 have to choose, I am probably most interested in the
                 development of enterprise system.
               </p>
+            </div>
+            <div className = "social-media-pic">
+              <a title = "Github" href = "https://github.com/ireneliee"><img className="individual-socmed-pic github" src={github} alt="Github" /></a>
+              <a title = "Medium" href = "https://medium.com/@irenelie1412"><img className="individual-socmed-pic medium" src={medium} alt="Medium" /></a>
+              <a title = "LinkedIn" href = "https://www.linkedin.com/in/irene-lie/"><img className="individual-socmed-pic linkedin" src={linkedin} alt="LinkedIn" /></a>
+              <a title = "Twitter" href = "https://twitter.com/irenelie1412"><img className="individual-socmed-pic twitter" src={twitter} alt="Twitter" /></a>
+              <a title = "Instagram" href = "https://www.instagram.com/thebrokennessgallery/"><img className="individual-socmed-pic instagram" src={instagram} alt="Instagram" /></a>
             </div>
           </div>
 
