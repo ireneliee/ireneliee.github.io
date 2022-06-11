@@ -1,3 +1,5 @@
+import { IonCard, IonItem, IonIcon, IonLabel, IonButton, IonCardContent } from "@ionic/react";
+import { pin } from "ionicons/icons";
 import React from "react";
 import Post from "../models/Post";
 
@@ -9,18 +11,19 @@ const IndividualPostSummary: React.FC<Post> = ({
   content,
 }: Post) => {
   return (
-    <div>
-      <tr>
-        <td> {title}</td>
-      </tr>
-      <tr>
-        <td> { shortSummary } </td>
-      </tr>
-      
-      <tr>
-        <td> { photoLink } </td>
-      </tr>
-    </div>
+    <IonCard>
+      <IonItem>
+        <IonIcon icon={pin} slot="start" />
+        <IonLabel>{title}</IonLabel>
+        <IonButton fill="outline" slot="end">
+          View
+        </IonButton>
+      </IonItem>
+
+      <IonCardContent>
+        { shortSummary }
+      </IonCardContent>
+    </IonCard>
   );
 };
 
