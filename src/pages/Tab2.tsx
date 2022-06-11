@@ -57,47 +57,26 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonContent>
         <IonSplitPane contentId="main">
-          <IonList>
-            <IonCard>
-              <IonItem>
-                <IonIcon icon={pin} slot="start" />
-                <IonLabel>Experience</IonLabel>
-                <IonButton fill="outline" slot="end">
-                  Breakdowns
-                </IonButton>
-              </IonItem>
+          <IonMenu side="start" menuId="custom" className="my-custom-menu">
+            <IonHeader>
+              <IonToolbar color="tertiary">
+                <IonTitle>Custom Menu</IonTitle>
+              </IonToolbar>
+            </IonHeader>
+            <IonContent>
+              <IonList>
+                <IonItem>Menu Item</IonItem>
+                <IonItem>Menu Item</IonItem>
+                <IonItem>Menu Item</IonItem>
+                <IonItem>Menu Item</IonItem>
+                <IonItem>Menu Item</IonItem>
+              </IonList>
+            </IonContent>
+          </IonMenu>
 
-              <IonCardContent>{experience}</IonCardContent>
-            </IonCard>
-
-            <IonCard>
-              <IonItem>
-                <IonIcon icon={pin} slot="start" />
-                <IonLabel>Projects</IonLabel>
-                <IonButton fill="outline" slot="end">
-                  Breakdowns
-                </IonButton>
-              </IonItem>
-
-              <IonCardContent>{project}</IonCardContent>
-            </IonCard>
-
-            <IonCard>
-              <IonItem>
-                <IonIcon icon={pin} slot="start" />
-                <IonLabel>Activities</IonLabel>
-                <IonButton fill="outline" slot="end">
-                  Breakdowns
-                </IonButton>
-              </IonItem>
-
-              <IonCardContent>{activities}</IonCardContent>
-            </IonCard>
-            
-          </IonList>
-
-          
-          <IonContent id = "main"><ExperienceContent></ExperienceContent></IonContent>
+          <IonContent id="main">
+            <ExperienceContent></ExperienceContent>
+          </IonContent>
         </IonSplitPane>
       </IonContent>
     </IonPage>
