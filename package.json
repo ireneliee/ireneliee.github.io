@@ -2,6 +2,7 @@
   "name": "with-love-irene",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://ireneliee.github.io",
   "dependencies": {
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.5.1",
@@ -45,7 +46,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

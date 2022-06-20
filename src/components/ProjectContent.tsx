@@ -43,18 +43,27 @@ const ProjectContent: React.FC = () => {
               The staff website is developed using JSF Framework, while the
               customer website is developed using Angular, which is connected to
               the Jakarta EE back-end using REST API.
+              
               <div className="github-link">
                 <div className="single-link">
+                  <div className="icon">
                   <IonIcon icon={linkOutline}></IonIcon>
+                  </div>
+                  <div className="link">
                   <a href="https://github.com/ireneliee/beforeLightningBackend">
                     Staff portal + backend
                   </a>
+                  </div>
                 </div>
                 <div className="single-link">
+                  <div className="icon">
                   <IonIcon icon={linkOutline}></IonIcon>
+                  </div>
+                  <div className="link">
                   <a href="https://github.com/ireneliee/beforeLightningAngular">
                     Customer portal
                   </a>
+                  </div>
                 </div>
               </div>
             </IonCardContent>
@@ -89,12 +98,13 @@ const ProjectContent: React.FC = () => {
               </ul>
               <div className="github-link">
                 <div className="single-link">
-                  <IonIcon icon={linkOutline}></IonIcon>
-                  <a href="https://github.com/ireneliee/hors">
-                    HORS
-                  </a>
+                  <div className="icon">
+                    <IonIcon icon={linkOutline}></IonIcon>
+                  </div>
+                  <div className="link">
+                    <a href="https://github.com/ireneliee/hors">HORS</a>
+                  </div>
                 </div>
-               
               </div>
             </IonCardContent>
           </IonCard>
