@@ -60,7 +60,7 @@ const ProjectContent: React.FC = () => {
                   <IonIcon icon={linkOutline}></IonIcon>
                   </div>
                   <div className="link">
-                  <a href="https://github.com/ireneliee/beforeLightningAngular">
+                  <a  href="https://github.com/ireneliee/beforeLightningAngular">
                     Customer portal
                   </a>
                   </div>
