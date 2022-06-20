@@ -44,7 +44,7 @@ const Tab2: React.FC = () => {
           <IonMenu side="start" menuId="custom" className="my-custom-menu">
             <IonHeader>
               <IonToolbar color="tertiary">
-                <IonTitle>Custom Menu</IonTitle>
+                <IonTitle>Menu</IonTitle>
               </IonToolbar>
             </IonHeader>
             <IonContent>

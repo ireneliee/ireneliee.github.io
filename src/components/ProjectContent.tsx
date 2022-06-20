@@ -13,13 +13,14 @@ import {
   IonImg,
   IonThumbnail,
 } from "@ionic/react";
-import { image, logoGithub, pin } from "ionicons/icons";
+import { image, linkOutline, logoGithub, pin } from "ionicons/icons";
 import React from "react";
 import Post from "../models/Post";
 import amf from "../images/Amf.png";
 import github from "../images/github.png";
 import git from "../images/git.png";
 import "./ProjectContent.css";
+import { link } from "fs";
 
 const ProjectContent: React.FC = () => {
   return (
@@ -43,20 +44,18 @@ const ProjectContent: React.FC = () => {
               customer website is developed using Angular, which is connected to
               the Jakarta EE back-end using REST API.
               <div className="github-link">
-                <IonButton
-                  color="primary"
-                  href="https://github.com/ireneliee/beforeLightningBackend"
-                >
-                  Staff portal + backend
-                  <IonIcon slot="end" icon={logoGithub} />
-                </IonButton>
-                <IonButton
-                  color="primary"
-                  href="https://github.com/ireneliee/beforeLightningAngular"
-                >
-                  Customer portal
-                  <IonIcon slot="end" icon={logoGithub} />
-                </IonButton>
+                <div className="single-link">
+                  <IonIcon icon={linkOutline}></IonIcon>
+                  <a href="https://github.com/ireneliee/beforeLightningBackend">
+                    Staff portal + backend
+                  </a>
+                </div>
+                <div className="single-link">
+                  <IonIcon icon={linkOutline}></IonIcon>
+                  <a href="https://github.com/ireneliee/beforeLightningAngular">
+                    Customer portal
+                  </a>
+                </div>
               </div>
             </IonCardContent>
           </IonCard>
@@ -88,13 +87,15 @@ const ProjectContent: React.FC = () => {
                   utlizes the SOAP protocols
                 </li>
               </ul>
-              <IonButton
-                color="primary"
-                href="https://github.com/ireneliee/hors"
-              >
-                HORS
-                <IonIcon slot="end" icon={logoGithub} />
-              </IonButton>
+              <div className="github-link">
+                <div className="single-link">
+                  <IonIcon icon={linkOutline}></IonIcon>
+                  <a href="https://github.com/ireneliee/hors">
+                    HORS
+                  </a>
+                </div>
+               
+              </div>
             </IonCardContent>
           </IonCard>
         </div>
