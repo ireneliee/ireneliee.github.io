@@ -13,16 +13,20 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonContent fullscreen class="tab-one-fullscreen">
         <div className="animation-container-homepage">
+          <div className="coffee-machine">
+            <Coffee></Coffee>
+          </div>
           <div className="narative">
             <div className="moving-title">
               <MovingTitle></MovingTitle>
             </div>
-            <div>
+            <div className="laptop-text">
               <p>
-                As an Information System undergraduate at NUS, I am very much
-                curious about everything computer science related. However, if I
-                have to choose, I am probably most interested in the development
-                of enterprise system.
+                Hi! I'm Irene! As an Information System undergraduate at NUS, I
+                am very much curious about everything computer science related.
+                However, if I have to choose, I am probably most interested in
+                the development of enterprise system. I'm very excited to
+                connect with you!
               </p>
             </div>
             <div className="social-media-pic">
@@ -65,13 +69,10 @@ const Tab1: React.FC = () => {
                 />
               </a>
             </div>
+            
           </div>
-
-          <div className="coffee-machine">
-            <Coffee></Coffee>
-          </div>
+          
         </div>
-        <div></div>
       </IonContent>
     </IonPage>
   );

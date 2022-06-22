@@ -1,49 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Quicksand&display=swap");
 
 ion-content {
-    --ion-background-color: #f8f9f9
+  --ion-background-color: #f8f9f9;
 }
-
 p {
-    font-family: 'Quicksand', sans-serif;
-    max-width: 80%;
+  font-family: "Quicksand", sans-serif;
+  max-width: 80%;
 }
 
 .animation-container-homepage {
-    display: flex;
-    margin-top: 20%;
-    margin-left: 50%;
+  display: flex;
+  margin-top: 20%;
+  margin-left: 50%;
 }
 
 .button-menu {
-    margin-left: 50%;
-
+  margin-left: 50%;
 }
 .button-choice {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .narative {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 .individual-socmed-pic {
-    border-radius: 20%;
-    width: 30px;
-    height: 30px;
-    margin-right: 1em;
+  border-radius: 20%;
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
 }
 
 .social-media-pic {
-    margin-bottom: 2em;
-    
+  margin-bottom: 2em;
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-    
+.laptop-text {
+    display: inline;
+}
+
+@media only screen and (max-width: 1180px) {
+  .moving-title {
+    display: none;
+  }
+  p {
+    font-family: "Quicksand", sans-serif;
+    max-width: 100%;
+  }
+  .animation-container-homepage {
+    display: block;
+    margin-top: 100%;
+    margin-left: 20%;
+    text-align: justify;
+  }
+  .social-media-pic {
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  .narative {
+    display: none;
+  }
 }
