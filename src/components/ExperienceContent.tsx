@@ -1,22 +1,12 @@
 import {
   IonCard,
-  IonItem,
-  IonIcon,
-  IonLabel,
-  IonButton,
   IonCardContent,
-  IonContent,
-  IonTitle,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonImg,
-  IonThumbnail,
+  IonContent,
 } from "@ionic/react";
-import { image, pin } from "ionicons/icons";
 import React from "react";
-import Post from "../models/Post";
-import amf from "../images/Amf.png";
 
 const ExperienceContent: React.FC = () => {
   return (

@@ -1,4 +1,11 @@
-import { IonCard, IonItem, IonIcon, IonLabel, IonButton, IonCardContent } from "@ionic/react";
+import {
+  IonButton,
+  IonCard,
+  IonCardContent,
+  IonIcon,
+  IonItem,
+  IonLabel,
+} from "@ionic/react";
 import { pin } from "ionicons/icons";
 import React from "react";
 import Post from "../models/Post";
@@ -20,9 +27,7 @@ const IndividualPostSummary: React.FC<Post> = ({
         </IonButton>
       </IonItem>
 
-      <IonCardContent>
-        { shortSummary }
-      </IonCardContent>
+      <IonCardContent>{shortSummary}</IonCardContent>
     </IonCard>
   );
 };

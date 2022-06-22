@@ -1,26 +1,16 @@
 import {
   IonCard,
-  IonItem,
-  IonIcon,
-  IonLabel,
-  IonButton,
   IonCardContent,
-  IonContent,
-  IonTitle,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonImg,
-  IonThumbnail,
+  IonContent,
 } from "@ionic/react";
-import { image, pin } from "ionicons/icons";
 import React from "react";
-import Post from "../models/Post";
-import amf from "../images/Amf.png";
 
 const ActivitiesContent: React.FC = () => {
   return (
-    <IonContent>
+    <>
       <div className="activity-details">
         <div className="card">
           <IonCard>
@@ -66,12 +56,13 @@ const ActivitiesContent: React.FC = () => {
           </IonCardHeader>
 
           <IonCardContent>
-            As an NUS Ambassador, I promote the university to incoming undergraduates by leading university tours as well as responding to queries during Live Chat.
+            As an NUS Ambassador, I promote the university to incoming
+            undergraduates by leading university tours as well as responding to
+            queries during Live Chat.
           </IonCardContent>
         </IonCard>
       </div>
-      
-    </IonContent>
+    </>
   );
 };
 

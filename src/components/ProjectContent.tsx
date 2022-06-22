@@ -13,7 +13,7 @@ import "./ProjectContent.css";
 
 const ProjectContent: React.FC = () => {
   return (
-    <IonContent>
+    <>
       <div className="experience-details">
         <div className="experience-card">
           <IonCard>
@@ -116,7 +116,7 @@ const ProjectContent: React.FC = () => {
           </IonCard>
         </div>
       </div>
-    </IonContent>
+    </>
   );
 };
 
