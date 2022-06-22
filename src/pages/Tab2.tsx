@@ -1,40 +1,23 @@
-import React from "react";
 import {
-  IonSplitPane,
-  IonMenu,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonRouterOutlet,
   IonContent,
-  IonPage,
-  IonList,
-  IonSearchbar,
-  IonLabel,
-  IonButton,
-  IonCard,
-  IonCardContent,
+  IonHeader,
   IonIcon,
   IonItem,
-  IonChip,
-  IonFab,
-  IonFabButton,
+  IonLabel,
+  IonList,
+  IonMenu,
+  IonPage,
+  IonSplitPane,
+  IonTitle,
+  IonToolbar,
 } from "@ionic/react";
-import { PostSummaryList } from "../components/PostSummaryList";
-import { PostView } from "../components/PostView";
 import {
-  arrowForwardCircle,
   codeSlashOutline,
   documentOutline,
-  hardwareChip,
   laptopOutline,
   peopleOutline,
-  pin,
 } from "ionicons/icons";
-import { title } from "process";
-import ExperienceContent from "../components/ExperienceContent";
-import ActivitiesContent from "../components/ActivitiesContent";
-import ProjectContent from "../components/ProjectContent";
+import React from "react";
 import ContentWrapper from "../components/ContentWrapper";
 
 const Tab2: React.FC = () => {
@@ -65,8 +48,13 @@ const Tab2: React.FC = () => {
                   <IonLabel>Activities</IonLabel>
                 </IonItem>
                 <IonItem>
-                  <IonIcon icon={documentOutline} slot="start"/>
-                  <IonLabel>Resume: <a href = "https://pdfhost.io/v/Held9WhWl_Irene_Lie_Updated_Resume.pdf">view</a></IonLabel>
+                  <IonIcon icon={documentOutline} slot="start" />
+                  <IonLabel>
+                    Resume:{" "}
+                    <a href="https://pdfhost.io/v/Held9WhWl_Irene_Lie_Updated_Resume.pdf">
+                      view
+                    </a>
+                  </IonLabel>
                 </IonItem>
               </IonList>
             </IonContent>

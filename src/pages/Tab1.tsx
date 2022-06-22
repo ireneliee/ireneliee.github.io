@@ -12,7 +12,6 @@ import "./Tab1.css";
 import MovingTitle from "../components/MovingTitle";
 import Coffee from "../components/Coffee";
 import { BrowserRouter, Redirect, Route } from "react-router-dom";
-import Bio from "./Bio";
 import { IonReactRouter } from "@ionic/react-router";
 import twitter from "../images/twitter.png";
 import instagram from "../images/instagram.png";
@@ -23,13 +22,6 @@ import github from "../images/github.png";
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonReactRouter>
-        <IonRouterOutlet>
-          <Route exact path="/Bio">
-            <Bio />
-          </Route>
-        </IonRouterOutlet>
-      </IonReactRouter>
 
       <IonContent fullscreen class="tab-one-fullscreen">
         <div className="animation-container-homepage">

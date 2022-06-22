@@ -1,26 +1,15 @@
 import {
   IonCard,
-  IonItem,
-  IonIcon,
-  IonLabel,
-  IonButton,
   IonCardContent,
-  IonContent,
-  IonTitle,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonImg,
-  IonThumbnail,
+  IonContent,
+  IonIcon,
 } from "@ionic/react";
-import { image, linkOutline, logoGithub, pin } from "ionicons/icons";
+import { linkOutline } from "ionicons/icons";
 import React from "react";
-import Post from "../models/Post";
-import amf from "../images/Amf.png";
-import github from "../images/github.png";
-import git from "../images/git.png";
 import "./ProjectContent.css";
-import { link } from "fs";
 
 const ProjectContent: React.FC = () => {
   return (
@@ -43,26 +32,25 @@ const ProjectContent: React.FC = () => {
               The staff website is developed using JSF Framework, while the
               customer website is developed using Angular, which is connected to
               the Jakarta EE back-end using REST API.
-              
               <div className="github-link">
                 <div className="single-link">
                   <div className="icon">
-                  <IonIcon icon={linkOutline}></IonIcon>
+                    <IonIcon icon={linkOutline}></IonIcon>
                   </div>
                   <div className="link">
-                  <a href="https://github.com/ireneliee/beforeLightningBackend">
-                    Staff portal + backend
-                  </a>
+                    <a href="https://github.com/ireneliee/beforeLightningBackend">
+                      Staff portal + backend
+                    </a>
                   </div>
                 </div>
                 <div className="single-link">
                   <div className="icon">
-                  <IonIcon icon={linkOutline}></IonIcon>
+                    <IonIcon icon={linkOutline}></IonIcon>
                   </div>
                   <div className="link">
-                  <a  href="https://github.com/ireneliee/beforeLightningAngular">
-                    Customer portal
-                  </a>
+                    <a href="https://github.com/ireneliee/beforeLightningAngular">
+                      Customer portal
+                    </a>
                   </div>
                 </div>
               </div>
