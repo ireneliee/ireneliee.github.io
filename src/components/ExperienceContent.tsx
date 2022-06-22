@@ -10,7 +10,7 @@ import React from "react";
 
 const ExperienceContent: React.FC = () => {
   return (
-    <IonContent>
+    <>
       <div className="internship-details">
         <div className="card">
           <IonCard>
@@ -84,7 +84,7 @@ const ExperienceContent: React.FC = () => {
           </IonCardContent>
         </IonCard>
       </div>
-    </IonContent>
+    </>
   );
 };
 

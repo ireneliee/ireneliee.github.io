@@ -13,10 +13,10 @@ import "./ProjectContent.css";
 
 const ProjectContent: React.FC = () => {
   return (
-    <>
+    <div className = "big-container-for-background">
       <div className="experience-details">
         <div className="experience-card">
-          <IonCard>
+          <IonCard color = "#cae3eb">
             <IonCardHeader>
               <IonCardSubtitle>January 2022 - May 2022</IonCardSubtitle>
               <IonCardTitle>
@@ -116,7 +116,7 @@ const ProjectContent: React.FC = () => {
           </IonCard>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
