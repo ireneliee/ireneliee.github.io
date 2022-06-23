@@ -11,8 +11,8 @@ p {
 
 .animation-container-homepage {
   display: flex;
-  /* margin-top: 20%;
-  margin-left: 50%; */
+  margin-top: 20%;
+  margin-left: 50%;
 }
 
 .button-menu {
@@ -24,7 +24,6 @@ p {
 
 .narative {
   max-width: 80%;
-  max-height: 300px;
 }
 
 .individual-socmed-pic {
@@ -60,7 +59,7 @@ p {
     margin-bottom: 0.5em;
     text-align: center;
   }
-  /* .narative {
+  .narative {
     display: none;
-  } */
+  }
 }
