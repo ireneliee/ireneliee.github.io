@@ -4,6 +4,12 @@
 ion-content {
   --ion-background-color: #f8f9f9;
 }
+
+@media only screen and (min-width: 1180px) {
+  .narative-only-phone {
+    display: none;
+  }
+}
 p {
   font-family: "Quicksand", sans-serif;
   max-width: 80%;
@@ -11,7 +17,7 @@ p {
 
 .animation-container-homepage {
   display: flex;
-  margin-top: 20%;
+  margin-top: 17%;
   margin-left: 50%;
 }
 
@@ -24,6 +30,7 @@ p {
 
 .narative {
   max-width: 80%;
+  position: relative;
 }
 
 .individual-socmed-pic {
@@ -41,7 +48,13 @@ p {
     display: inline;
 }
 
+
+
 @media only screen and (max-width: 1180px) {
+  .coffee-machine {
+    position: fixed;
+    text-align: center;
+  }
   .moving-title {
     display: none;
   }
@@ -52,7 +65,7 @@ p {
   .animation-container-homepage {
     display: block;
     margin-top: 100%;
-    margin-left: 20%;
+    margin-left: 12%;
     text-align: justify;
   }
   .social-media-pic {
@@ -62,4 +75,13 @@ p {
   .narative {
     display: none;
   }
+  .narative-only-phone {
+    display: block;
+    position: fixed;
+    margin-top: 30%;
+    text-align: center;
+    max-width: 80%;
+    margin-left: 13%;
+  }
+  
 }
